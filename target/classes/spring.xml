@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-autowire="byType">
+
+    <import resource="springmvc.xml"/>
+    <bean name="byTypeImpl" class="org.example.service.impl.ByTypeImpl">
+        <!--        <constructor-arg name="ldbDaoImpl" ref="ldbDaoImpl"/>-->
+        <!--        <property name="ldbDaoImpl" ref="ldbDaoImpl"/>-->
+    </bean>
+
+    <!--    <bean name="lifecycleServiceImpl" class="org.example.service.impl.LifecycleServiceImpl"-->
+    <!--          init-method="init" destroy-method="destoryMethod"/>-->
+</beans>
