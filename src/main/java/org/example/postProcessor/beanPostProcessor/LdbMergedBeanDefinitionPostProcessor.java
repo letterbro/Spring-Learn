@@ -2,7 +2,6 @@ package org.example.postProcessor.beanPostProcessor;
 
 import org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor;
 import org.springframework.beans.factory.support.RootBeanDefinition;
-import org.springframework.stereotype.Component;
 
 /**
  * @ProjectName: spring-learn
@@ -18,6 +17,7 @@ public class LdbMergedBeanDefinitionPostProcessor implements MergedBeanDefinitio
     @Override
     public void postProcessMergedBeanDefinition(RootBeanDefinition rootBeanDefinition, Class<?> aClass, String s) {
         System.out.println("正在实例化");
+        System.out.println("这个testfor 聪勇");
     }
 
     @Override
