@@ -17,7 +17,6 @@ public class LdbMergedBeanDefinitionPostProcessor implements MergedBeanDefinitio
     @Override
     public void postProcessMergedBeanDefinition(RootBeanDefinition rootBeanDefinition, Class<?> aClass, String s) {
         System.out.println("正在实例化");
-        System.out.println("这个testfor 聪勇");
     }
 
     @Override
